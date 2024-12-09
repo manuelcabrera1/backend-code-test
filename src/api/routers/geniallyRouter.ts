@@ -7,7 +7,7 @@ import { validateId, validateName, validateDescription } from "../middlewares/ge
 import { InMemoryEventBus } from "../../contexts/shared/infraestructure/InMemoryEventBus";
 import IncrementGeniallyCounterService from "../../contexts/core/geniallyCounter/application/IncrementGeniallyCounterService";
 import IncrementCounterOnGeniallyCreated from "../../contexts/core/geniallyCounter/application/IncrementCounterOnGeniallyCreated";
-import GeniallyCreatedEvent from "../../contexts/shared/domain/GeniallyCreatedEvent";
+import GeniallyCreatedEvent from "../../contexts/core/genially/domain/GeniallyCreatedEvent";
 import { geniallyRepository, counterRepository } from "../dependencies/dependencies";
 //Router
 const geniallyRouter = Router();

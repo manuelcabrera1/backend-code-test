@@ -1,4 +1,4 @@
-import DomainEvent from "./DomainEvent";
+import DomainEvent from "../../../shared/domain/DomainEvent";
 
 export default class GeniallyCreatedEvent extends DomainEvent {
     static readonly eventName = "genially.created";

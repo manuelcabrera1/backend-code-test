@@ -1,7 +1,7 @@
 import Genially from "../domain/Genially";
 import GeniallyRepository from "../domain/GeniallyRepository";
 import EventBus from "../../../shared/domain/EventBus";
-import GeniallyCreatedEvent from "../../../shared/domain/GeniallyCreatedEvent";
+import GeniallyCreatedEvent from "../domain/GeniallyCreatedEvent";
 
 type CreateGeniallyServiceRequest = {
   id: string;
