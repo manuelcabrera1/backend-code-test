@@ -6,11 +6,13 @@ export default class Genially {
   private _modifiedAt: Date;
   private _deletedAt: Date;
 
-  constructor(id: string, name: string, description?: string) {
+  constructor(id: string, name: string, description?: string, createdAt?: Date, modifiedAt?: Date, deletedAt?: Date) {
     this._id = id;
     this._name = name;
     this._description = description;
-    this._createdAt = new Date();
+    this._createdAt = createdAt || new Date();
+    this._modifiedAt = modifiedAt || undefined;
+    this._deletedAt = deletedAt || undefined;
   }
 
   get id(): string {
@@ -35,5 +37,17 @@ export default class Genially {
 
   get deletedAt(): Date {
     return this._deletedAt;
+  }
+
+  set name(name: string) {
+    this._name = name;
+  }
+
+  set deletedAt(deletedAt: Date) {
+    this._deletedAt = deletedAt;
+  }
+
+  set modifiedAt(modifiedAt: Date) {
+    this._modifiedAt = modifiedAt;
   }
 }
